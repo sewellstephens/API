@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "payload": {
+  },
+  "error": {
+    "code": 400,
+    "message": "An error occurred!"
+  }
+}
