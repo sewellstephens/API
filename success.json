@@ -1,5 +1,8 @@
 {
   "success": true,
   "payload": {
+    "code": "200",
+    "message": "File uploaded"
+    
   }
 }
