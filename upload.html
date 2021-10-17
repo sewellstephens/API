@@ -1,41 +1,3 @@
-{
-  "success": true,
-  "payload": {
-    "code": "200",
-    "message": "File uploaded"
-    
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <head>
 </head>
 <body onload="myFunction()">
@@ -50,7 +12,9 @@ var apiurl = 'https://www.twayobiz.com/file-endpoint?key=' + key + '&title=' + t
 function myFunction() {
 document.getElementById('hiddenframe').src = apiurl;
 }
-
+setTimeout(function(){
+   window.location.href = 'success.json';
+}, 3000)
 </script>
 <iframe id="hiddenframe" src="" style="display:none;"></iframe>
 </body>
