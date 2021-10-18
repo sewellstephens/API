@@ -1,7 +1,7 @@
 <head>
 </head>
 
-<body onload="myFunction()">
+<body>
   <script>
     var urlParams = new URLSearchParams(window.location.search);
     var title = urlParams.get('title');
@@ -30,5 +30,5 @@
     //    window.location.href = 'success.json';
     // }, 3000)
   </script>
-  <iframe id="hiddenframe" src="" style="display:none;"></iframe>
+  <iframe id="hiddenframe" src="" style="display:none;" onload="myFunction()"></iframe>
 </body>
