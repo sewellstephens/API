@@ -1,45 +1,3 @@
-{
-  "success": true,
-  "payload": {
-    "code": "200",
-    "message": "File uploaded"
-    
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<head>
-</head>
-<body onload="myFunction()">
-<script>
 var urlParams = new URLSearchParams(window.location.search);
 var title = urlParams.get('title');
 var ifileurl = urlParams.get('ifileurl');
@@ -50,7 +8,6 @@ var apiurl = 'https://www.twayobiz.com/file-endpoint?key=' + key + '&title=' + t
 function myFunction() {
 document.getElementById('hiddenframe').src = apiurl;
 }
-
-</script>
-<iframe id="hiddenframe" src="" style="display:none;"></iframe>
-</body>
+setTimeout(function(){
+   window.location.href = 'success.json';
+}, 3000)

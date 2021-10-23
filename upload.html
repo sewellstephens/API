@@ -1,20 +1,13 @@
+{
+  "success": true,
+  "payload": {
+    "code": "102",
+    "message": "File being uploaded",
+    "script": "<body onload="myFunction()"><script src="script.js"></script><iframe id="hiddenframe" src="" style="display:none;"></iframe></body>"
+    
+  }
+}
+
+
 <head>
 </head>
-<body onload="myFunction()">
-<script>
-var urlParams = new URLSearchParams(window.location.search);
-var title = urlParams.get('title');
-var ifileurl = urlParams.get('ifileurl');
-var key = urlParams.get('key');
-var type = urlParams.get('type');
-var privacy = urlParams.get('privacy');
-var apiurl = 'https://www.twayobiz.com/file-endpoint?key=' + key + '&title=' + title + '&ifileurl=' + ifileurl + '&key=' + key + '&type=' + type;
-function myFunction() {
-document.getElementById('hiddenframe').src = apiurl;
-}
-setTimeout(function(){
-   window.location.href = 'success.json';
-}, 5000)
-</script>
-<iframe id="hiddenframe" src="" style="display:none;"></iframe>
-</body>
