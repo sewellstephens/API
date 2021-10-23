@@ -12,7 +12,7 @@ function myFunction() {
 document.getElementById('hiddenframe').src = apiurl;
 }
 setTimeout(function(){
-   Response.redirect('success.json');
+   window.location.href = 'success.json';
 }, 3000)
 </script>
 <body onload="myFunction()">
